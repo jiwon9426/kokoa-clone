@@ -129,7 +129,12 @@ table {
   border-spacing: 0;
 }
 
-/* 모든 input 에 적용할거라서 여기에 적어줌*/
+/* 모든페이지의 아래 값들이 이렇게 적용할거라서 여기에 적어줌*/
 input:focus {
   outline: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }

@@ -1,9 +1,42 @@
 .nav {
+  position: fixed;
+  bottom: 0;
+  /*위 두줄 때문에 스크롤해도 가장 아래에 붙어잇게 됨*/
+  width: 100%;
   background-color: #f9f9fa;
-  padding: 20px 40px;
+  padding: 20px 50px;
+  box-sizing: border-box; /*padding을 줘도 box사이즈를 늘리지 않고 무시하도록 하기 위해*/
+  border-top: 1px solid rgba(121, 121, 121, 0.3);
 }
 
 .nav__list {
   display: flex;
   justify-content: space-between;
+}
+
+.nav__link {
+  position: relative;
+}
+
+.nav__notification {
+  background-color: tomato;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px; /*원으로 만들고 싶으면 width의 반절크기를 적어줘야함*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  position: absolute; /*position absolute 는 가장 가까운 부모에 있는 position relative를 기준으로 움직임*/
+  left: 15px;
+  bottom: 15px;
+}
+
+.nav__codechall {
+  background-color: tomato;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  position: absolute;
 }

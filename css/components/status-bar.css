@@ -1,4 +1,7 @@
 .status-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex; /* flex 는 자식에게 명시하지 않고 부모에게 명시해야함*/
   justify-content: center;
   padding: 5px 3px;
