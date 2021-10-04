@@ -1,0 +1,28 @@
+.status-bar {
+  display: flex; /* flex 는 자식에게 명시하지 않고 부모에게 명시해야함*/
+  justify-content: center;
+  padding: 5px 3px;
+}
+
+.status-bar__column {
+  width: 33%;
+}
+
+.status-bar__column:first-child span {
+  margin-right: 5px; /* 와이파이 조금 떨어뜨려서 보여줌*/
+}
+
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.status-bar__column .fa-battery-three-quarters {
+  margin: 0px 5px;
+}
