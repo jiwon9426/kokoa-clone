@@ -1,0 +1,20 @@
+.alt-header {
+  padding: var(--horizontal-space);
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.alt-header__title {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+/*아래 두가지 방법으로 가장 오른쪽과 왼쪽에 자동으로 붙게 됨*/
+.alt-header :first-child {
+  margin-right: auto;
+}
+
+.alt-header :last-child {
+  margin-left: auto;
+}
