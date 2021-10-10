@@ -11,3 +11,28 @@
 #friends-display-link i {
   color: rgba(0, 0, 0, 0.3);
 }
+
+/*애니메이션 효과주는것*/
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden; /*끝나고 안보이게 만들어줌*/
+  }
+}
+
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 132px;
+  animation: hideSplashScreen 0.3s ease-in-out forwards; /*끝나고 to 형태로 유지시키기 위해 forwards 적어줌*/
+  animation-delay: 1s;
+}
